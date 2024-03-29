@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country, State, and City Dropdown</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="div-container">
+      <div class="div">
+        <h2>Select Country, State, and City</h2>
+      </div>
+      <div class="div-dropdown">
+        <select id="countrySelect" onchange="populateStates()">
+          <option value="">Select Country</option>
+          <option value="Pakistan">Pakistan</option>
+          <option value="America">America</option>
+          <option value="India">India</option>
+        </select>
+
+        <select id="stateSelect" onchange="populateCities()" disabled>
+          <option value="">Select State</option>
+        </select>
+
+        <select id="citySelect" disabled>
+          <option value="">Select City</option>
+        </select>
+      </div>
+    </div>
+    <script src="./JS/myScript.js"></script>
+  </body>
+</html>

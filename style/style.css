@@ -1,0 +1,83 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.div-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.div {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.div-dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h2 {
+  color: #333;
+}
+
+select {
+  margin: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  appearance: none;
+  min-width: 30%;
+}
+
+select:focus {
+  outline: none;
+  border-color: #6cb2eb;
+  box-shadow: 0 0 5px rgba(108, 178, 235, 0.7);
+}
+
+.option-placeholder {
+  color: #999;
+}
+
+option:checked {
+  background-color: #6cb2eb;
+  color: #fff;
+}
+
+select:after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+#countrySelect option {
+  background-color: #f0f0f0;
+}
+
+#stateSelect option {
+  background-color: #e0e0e0;
+}
+
+#citySelect option {
+  background-color: #d0d0d0;
+}
+
+select option:hover {
+  background-color: #6cb2eb;
+  color: #fff;
+}
